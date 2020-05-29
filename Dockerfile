@@ -11,8 +11,7 @@ COPY www /www
 #
 # INSTALATIONS
 #
-RUN echo ":)" >> /www/public/index.html \
- && echo "alias ll='ls -alF'" >> /root/.bashrc \
+RUN echo "alias ll='ls -alF'" >> /root/.bashrc \
  && echo "alias www='cd /www'" >> /root/.bashrc \
  && echo "alias routes='php artisan route:list'" >> /root/.bashrc \
  && echo "alias tinker='php artisan tinker'" >> /root/.bashrc \
