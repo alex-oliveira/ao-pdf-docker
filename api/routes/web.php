@@ -18,5 +18,7 @@ use Illuminate\Support\Facades\Route;
 //});
 
 Route::get('/', function () {
-    return ['message' => 'ao-pdf service work`s!'];
+    return ['message' => 'ao-pdf service online!!'];
 });
+
+// \AOPDF\AOPDF::encode([['template' => 'https://github.com/alex-oliveira/ao-pdf/raw/master/example.pdf', 'params' => ['client_name' => 'ALEX DE OLIVEIRA', 'client_cpf' => '01877051195']]]);
