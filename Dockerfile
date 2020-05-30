@@ -62,10 +62,10 @@ RUN echo "alias ll='ls -alF'" >> /root/.bashrc \
 
 WORKDIR /www
 
-EXPOSE 80
+EXPOSE 8080
+
+ENV PATH=/scripts:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 
 ENTRYPOINT ["/bin/bash"]
 
-#STOPSIGNAL SIGTERM
-#
-#CMD ["/scripts/start.sh"]
+CMD ["/scripts/start.sh"]

@@ -9,7 +9,7 @@ services:
     networks:
       - default
     ports:
-      - 18001:80
+      - 18001:8080
     stdin_open: true
     tty: true
 
