@@ -1,13 +1,19 @@
 # AO-PDF-DOCKER
 
+Running container.
 ````
-$ docker image build -t ao-pdf-docker
-````
-
-````
-$ docker image pull ao/ao-pdf-docker
+$ docker container run -p 8080:8080 ao-pdf
 ````
 
+Accessing the test route in the browser.
 ````
-$ docker container run -p 18002:80 ao-pdf-docker
+http://localhost:8080/pdf/test
+````
+
+Services available at API:
+````
+GET/POST -> http://localhost:8080/pdf/fill
+````
+````
+GET -> http://localhost:8080/pdf/download
 ````
