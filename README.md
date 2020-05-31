@@ -1,8 +1,11 @@
-# AO-PDF-DOCKER
+# AO-PDF (DOCKER)
+
+
+## Run and Test
 
 Running container.
 ````
-$ docker container run -p 8080:8080 ao-pdf
+$ docker container run -d -p 8080:8080 aocode/ao-pdf:1.0.0
 ````
 
 Accessing the test route in the browser.
@@ -10,10 +13,26 @@ Accessing the test route in the browser.
 http://localhost:8080/pdf/test
 ````
 
-Services available at API:
+
+## Available Services
+
+#### GET / POST
 ````
-GET/POST -> http://localhost:8080/pdf/fill
+http://localhost:8080/pdf/fill
 ````
+
+#### GET
 ````
-GET -> http://localhost:8080/pdf/download
+http://localhost:8080/pdf/download
 ````
+
+
+## Collaboration
+
+Collaborate with this image.
+
+* https://github.com/alex-oliveira/ao-pdf-docker
+
+Collaborate with this package.
+
+* https://github.com/alex-oliveira/ao-pdf

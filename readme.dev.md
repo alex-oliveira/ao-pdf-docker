@@ -1,13 +1,9 @@
-# AO-PDF-DOCKER
+# AO-PDF (DOCKER)
 
 ````
-$ docker image build -t ao-pdf-docker
-````
-
-````
-$ docker image pull ao/ao-pdf-docker
+$ docker image build . -t aocode/ao-pdf:1.0.0
 ````
 
 ````
-$ docker container run -p 8080:8080 ao-pdf-docker
+$ docker image push aocode/ao-pdf:1.0.0
 ````
